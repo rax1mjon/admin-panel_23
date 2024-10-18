@@ -173,6 +173,11 @@ section {
     letter-spacing: 0.20000000298023224px;
 }
 
+
+.hamburger {
+    cursor: pointer;
+}
+
 /* body middle start */
 
 .body-middle {
