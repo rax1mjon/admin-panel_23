@@ -231,12 +231,12 @@ section {
     overflow: hidden;
 }
 
-.close ~ section {
+.close~section {
     left: 72px;
     width: calc(100% - 72px);
 }
 
-.close .brand-name{
+.close .brand-name {
     pointer-events: none;
     opacity: 0;
 }
@@ -253,24 +253,30 @@ section {
 
 /* table */
 
-table {
+.overview {
     border-collapse: collapse;
+    overflow: auto;
 }
 
-thead {
+.overview-head {
     width: 100%;
 }
 
-th,td {
+th {
     padding: 20px 0;
     text-align: left;
 }
 
-thead th {
+.owners td {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.overview-head th {
     color: var(--b-lable);
 }
 
-tbody td {
+.overview-body td {
     color: var(--b-owner);
 }
 
@@ -289,6 +295,14 @@ tbody td {
     margin-left: 20px;
 }
 
-tbody tr:nth-child(odd) {
+.overview-body tr:nth-child(odd) {
     background-color: var(--bg-td);
+}
+
+
+@media (max-width:990px) {
+    .table-border {
+        overflow: scroll;
+        /* width: 630px !important; */
+    }
 }
